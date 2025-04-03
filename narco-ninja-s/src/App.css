@@ -16,9 +16,15 @@ body {
 }
 
 #root {
+  width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
+
 
 .logo {
   height: 6em;
@@ -125,7 +131,7 @@ header p {
   background-color: #0056b3;
 }
 
-ffooter {
+footer {
   width: 100%;
   padding: 1rem 0;
   background-color: #007bff;

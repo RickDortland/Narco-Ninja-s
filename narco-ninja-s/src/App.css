@@ -16,10 +16,8 @@ body {
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -127,14 +125,17 @@ header p {
   background-color: #0056b3;
 }
 
-footer {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: var(--primary-color);
+ffooter {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #007bff;
   color: white;
-  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-radius: 0; 
 }
+
 
 footer p {
   margin: 0;

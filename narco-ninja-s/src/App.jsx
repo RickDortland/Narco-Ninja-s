@@ -5,8 +5,12 @@ import './App.css'
 import Header from './components/Header';
 import ServiceCard from './components/ServiceCard';
 import Footer from './components/Footer';
+import Medicatie from './pages/Medicatie';
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+function Home() {
   return (
     <div>
       <Header />
@@ -15,7 +19,7 @@ function App() {
           title="Medicatie bestellen"
           description="Bestel uw medicijnen eenvoudig online."
           linkText="Meer informatie"
-          linkHref="#"
+          linkHref="/medicatie" 
         />
         <ServiceCard
           title="Herhaalservice"
@@ -35,4 +39,17 @@ function App() {
   );
 }
 
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/medicatie" element={<Medicatie />} />
+      </Routes>
+    </Router>
+  );
+}
+
 export default App;
+
+

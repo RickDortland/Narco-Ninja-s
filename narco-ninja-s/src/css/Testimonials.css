@@ -1,0 +1,39 @@
+.testimonials {
+  background-color: var(--background-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 300px;
+  text-align: left;
+}
+
+.testimonial .quote {
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.testimonial .author {
+  font-weight: bold;
+  color: var(--primary-color);
+}

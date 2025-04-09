@@ -1,0 +1,13 @@
+/* Verwijder extra marges tussen de header en hero */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 0; /* Zorg ervoor dat de header geen extra marge onderaan heeft */
+}
+
+.hero {
+  margin-top: 0; /* Zorg ervoor dat de hero direct aansluit op de header */
+}

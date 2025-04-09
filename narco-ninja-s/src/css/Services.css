@@ -1,0 +1,79 @@
+/* Specifieke selector voor de services-sectie */
+.services {
+  display: block; /* Zorg ervoor dat de sectie niet wordt beïnvloed door flexbox */
+  padding: 2rem 1rem; /* Verlaag de padding van de sectie */
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.8rem; /* Maak de titel iets kleiner */
+  margin-bottom: 1rem; /* Verlaag de marge onder de titel */
+  color: #007bff;
+}
+
+/* Specifieke selector voor de service-cards binnen de services-sectie */
+.services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Verklein de ruimte tussen de cards */
+  justify-content: center; /* Zorg ervoor dat de cards gecentreerd blijven */
+  align-items: flex-start; /* Zorg ervoor dat de cards bovenaan uitlijnen */
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem; /* Verlaag de padding binnen de cards */
+  border-radius: 8px;
+  width: 220px; /* Maak de cards smaller */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .icon {
+  font-size: 2.5rem; /* Maak de iconen iets kleiner */
+  margin-bottom: 0.5rem; /* Verlaag de marge onder de iconen */
+  color: #007bff;
+}
+
+.service-card h3 {
+  font-size: 1.2rem; /* Maak de titels van de cards iets kleiner */
+  margin-bottom: 0.5rem; /* Verlaag de marge onder de titels */
+  color: #007bff;
+}
+
+.service-card p {
+  font-size: 0.9rem; /* Maak de beschrijving iets kleiner */
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.service-card .service-link {
+  display: inline-block;
+  padding: 0.4rem 0.8rem; /* Verklein de knoppen */
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem; /* Maak de tekst in de knoppen kleiner */
+  transition: background-color 0.3s;
+}
+
+.service-card .service-link:hover {
+  background-color: #0056b3;
+}
